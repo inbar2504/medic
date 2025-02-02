@@ -1,0 +1,111 @@
+body {
+  z-index: 1000;
+  /* background-image: url(../assets/background2.jpg); */
+  /* background-size: 100% 100%; */
+  /* height: 100vh; */
+  /* display: flex; */
+  font-family: "avram";
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: space-between;  */
+}
+html,
+#root,
+body {
+  height: 100vh;
+  margin: 0;
+}
+.power-study {
+  z-index: 1000;
+  background-image: url(/assets/ropes5.png);
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  font-family: "avram";
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  /* justify-content: space-between; */
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.power {
+  height: min-content;
+  padding: 20px;
+  display: flex;
+  font-family: "avram";
+  flex-direction: column;
+  font-size: 5vmin;
+  width: 67vw;
+  text-align: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.move-btns-p {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  position: absolute;
+  top: 80vh;
+  /* display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  position: absolute;
+  top: 88vh;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  left: 50%;
+  transform: translateX(-50%); */
+}
+.image1 {
+  height: 45vh;
+}
+.blueHeader {
+  color: #083b4c;
+}
+.blackHeader {
+  color: #6f4245;
+}
+.image2 {
+  height: 24vh;
+}
+.image3 {
+  height: 18vh;
+  /* margin: 5%; */
+}
+.flexBox {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 4vmin;
+}
+.flexBox1 {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 4vmin;
+}
+.video-comp {
+  /* width: 50vw; */
+  height: 25vh;
+  margin-top: 7vh;
+}
+.video-comp1 {
+  /* width: 50vw; */
+  height: 25vh;
+  margin-top: 2vh;
+}
+.header-timer {
+  margin-top: -5vh;
+  margin-bottom: 0vh;
+}
+.header-timer1 {
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
