@@ -1,0 +1,41 @@
+body {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    border-left: 5px solid #e1e1e1;
+    padding-left: 5px;
+  }
+  
+  dl {
+    list-style: none;
+    margin:0;
+    padding:0;
+    border: 5px solid #e1e1e1;
+    box-shadow: 1px 3px 8px #888; 
+  }
+  dt {
+    padding: 10px 15px;
+    background:#eee;
+    &:hover {
+      background: darken(#eee, 5%);
+    }
+  }
+  
+  .placeholder {
+    background: rgb(255,240,120);
+    &:before {
+      content: "Drop here";
+      color: rgb(225,210,90);
+    }
+  }
+  .items {
+    border: 1px solid white;
+    color: rgb(25, 35, 24);
+    background-color: white;
+    border-radius: 15px;
+    font-family: avram;
+    padding: 2%;
+  }

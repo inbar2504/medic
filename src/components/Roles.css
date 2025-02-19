@@ -1,0 +1,29 @@
+.test {
+  z-index: 1000;
+  background-image: url(/medic/assets/background2.png);
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  font-family: "avram";
+  overflow: hidden;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-direction: column;
+}
+
+.home-button {
+  position: fixed;
+  top: 80vh;
+  border-radius: 30px;
+  padding: 12px;
+  /* font-family: 'avram' !important; */
+  color: #192318;
+  background-color: white;
+  border: 0;
+  font-size: 4vmin;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  cursor: pointer;
+}

@@ -19,7 +19,7 @@ body {
 }
 .power-study {
   z-index: 1000;
-  background-image: url(/assets/ropes5.png);
+  background-image: url(/assets/background2.png);
   background-size: 100% 100%;
   height: 100vh;
   display: flex;
@@ -33,79 +33,35 @@ body {
   justify-content: flex-start;
 }
 
-.power {
-  height: min-content;
-  padding: 20px;
-  display: flex;
-  font-family: "avram";
-  flex-direction: column;
-  font-size: 5vmin;
-  width: 67vw;
+
+.carousel-prev.block, .carousel-next.block {
+  opacity: 0 !important;
+}
+
+.hilo {
+  width: 65vw !important;
+  height: 30vh;
+  color: white;
+  background-color: #192318;
+  border: 4px solid white;
+  margin: 5vw;
+}
+.hilo1 {
+  width: 60vw; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  font-size: 6vmin;
+  /* margin-left: 8%; */
+}
+.slider {
+  width: 100vw;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sicum {
   text-align: center;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.move-btns-p {
-  display: flex;
-  justify-content: space-between;
-  width: 80vw;
-  position: absolute;
-  top: 80vh;
-  /* display: flex;
-  justify-content: space-between;
-  width: 90vw;
-  position: absolute;
-  top: 88vh;
-  align-items: center;
-  align-content: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  left: 50%;
-  transform: translateX(-50%); */
-}
-.image1 {
-  height: 45vh;
-}
-.blueHeader {
-  color: #083b4c;
-}
-.blackHeader {
-  color: #6f4245;
-}
-.image2 {
-  height: 24vh;
-}
-.image3 {
-  height: 18vh;
-  /* margin: 5%; */
-}
-.flexBox {
-  display: flex;
-  flex-direction: row-reverse;
-  font-size: 4vmin;
-}
-.flexBox1 {
-  display: flex;
-  flex-direction: row-reverse;
-  font-size: 4vmin;
-}
-.video-comp {
-  /* width: 50vw; */
-  height: 25vh;
-  margin-top: 7vh;
-}
-.video-comp1 {
-  /* width: 50vw; */
-  height: 25vh;
-  margin-top: 2vh;
-}
-.header-timer {
-  margin-top: -5vh;
-  margin-bottom: 0vh;
-}
-.header-timer1 {
-  margin-top: 0vh;
-  margin-bottom: 0vh;
 }
