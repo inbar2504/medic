@@ -98,12 +98,12 @@ body {
 }
 .btns5 {
   display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-width: 90vw;
-align-content: space-between;
-justify-content: space-around;
-animation: in 4s linear;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90vw;
+  align-content: space-between;
+  justify-content: space-around;
+  animation: in 4s linear;
 }
 .btn2 {
   display: flex;

@@ -70,7 +70,7 @@
   justify-content: flex-end;
 }
 
-.back-button {
+/* .back-button {
   transition: all 350ms;
   display: flex;
   align-items: center;
@@ -80,16 +80,13 @@
   cursor: pointer;
   border-radius: 30px;
   padding: 12px;
-  /* font-family: 'avram' !important; */
   color: #192318;
   background-color: white;
   border: 0;
   font-size: 4vmin;
   position: absolute;
   left: -3vw;
-  /* position: fixed;
-    top: 80vh; */
-}
+} */
 
 .back-button:hover {
   color: #52525b;
@@ -101,7 +98,7 @@
     color: #a3a3a3; */
 }
 
-.next-button {
+/* .next-button {
   transition: all 350ms;
   display: flex;
   align-items: center;
@@ -111,17 +108,29 @@
   cursor: pointer;
   border-radius: 30px;
   padding: 12px;
-  /* font-family: 'avram' !important; */
   color: #192318;
   background-color: white;
   border: 0;
   font-size: 4vmin;
   position: absolute;
   right: 70vw;
-  /* position: fixed;
-    top: 80vh; */
+} */
+.back-button, .next-button {
+  transition: all 350ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 12px;
+  color: #192318;
+  background-color: white;
+  border: 0;
+  font-size: 4vmin;
+  /* Removed position properties */
 }
-
 .next-button:hover {
   background-color: #ffffff;
 }

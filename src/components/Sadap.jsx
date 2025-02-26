@@ -68,7 +68,7 @@ function Sadap(props) {
       {showStart && 
     <div className="strt-page">
       <br />
-      <h2 id="header2">שימו &#x2764;
+      <h2 id="header2">שימו &#x2665;
         <br />
         להלן סדר הפעולות
       </h2>

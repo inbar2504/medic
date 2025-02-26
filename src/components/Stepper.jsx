@@ -1,6 +1,6 @@
 import React, { useState, Children, useRef, useLayoutEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { Box } from "@mui/material";
 import "./Stepper.css";
 
 export default function Stepper({
@@ -118,6 +118,15 @@ export default function Stepper({
             <div
               className={`footer-nav ${currentStep !== 1 ? "spread" : "end"}`}
             >
+              <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between', // Distribute buttons evenly
+            width: '100%', // Ensure it takes the full width
+            padding: '0 12px', // Optional padding
+          }}
+        >
+        
               {currentStep !== 1 && (
                 <button
                   onClick={handleBack}
@@ -140,6 +149,7 @@ export default function Stepper({
                   {/* {isLastStep ? "Complete" : nextButtonText} */}
                 </button>
               )}
+              </Box>
             </div>
           </div>
         )}
