@@ -110,49 +110,52 @@ export default function Stepper({
           direction={direction}
           className={`step-content-default ${contentClassName}`}
         >
-          {stepsArray[currentStep - 1]}
-        </StepContentWrapper>
-
-        {!isCompleted && (
-          <div className={`footer-container ${footerClassName}`}>
-            <div
-              className={`footer-nav ${currentStep !== 1 ? "spread" : "end"}`}
-            >
-              <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'space-between', // Distribute buttons evenly
-            width: '100%', // Ensure it takes the full width
-            padding: '0 12px', // Optional padding
-          }}
-        >
-        
-              {currentStep !== 1 && (
-                <button
-                  onClick={handleBack}
-                  className={`back-button ${
-                    currentStep === 1 ? "inactive" : ""
+          <Box width={"100%"}>
+            {stepsArray[currentStep - 1]}
+            {!isCompleted && (
+              <div className={`footer-container ${footerClassName}`}>
+                <div
+                  className={`footer-nav ${
+                    currentStep !== 1 ? "spread" : "end"
                   }`}
-                  {...backButtonProps}
                 >
-                  {backButtonText}
-                </button>
-              )}
-              {!isLastStep && (
-                <button
-                  onClick={isLastStep ? setShow("start1") : handleNext}
-                  // onClick={isLastStep ? handleComplete : handleNext}
-                  className="next-button"
-                  {...nextButtonProps}
-                >
-                  הבא
-                  {/* {isLastStep ? "Complete" : nextButtonText} */}
-                </button>
-              )}
-              </Box>
-            </div>
-          </div>
-        )}
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "space-between", // Distribute buttons evenly
+                      width: "100%", // Ensure it takes the full width
+                      bottom: 0,
+                      position: "absolute",
+                    }}
+                  >
+                    {currentStep !== 1 && (
+                      <button
+                        onClick={handleBack}
+                        className={`back-button ${
+                          currentStep === 1 ? "inactive" : ""
+                        }`}
+                        {...backButtonProps}
+                      >
+                        {backButtonText}
+                      </button>
+                    )}
+                    {!isLastStep && (
+                      <button
+                        onClick={isLastStep ? setShow("start1") : handleNext}
+                        // onClick={isLastStep ? handleComplete : handleNext}
+                        className="next-button"
+                        {...nextButtonProps}
+                      >
+                        הבא
+                        {/* {isLastStep ? "Complete" : nextButtonText} */}
+                      </button>
+                    )}
+                  </Box>
+                </div>
+              </div>
+            )}
+          </Box>
+        </StepContentWrapper>
       </div>
     </div>
   );
@@ -230,16 +233,16 @@ const stepVariants = {
 export function Step({ items, children }) {
   return (
     <>
-     <div className="items-row">
+      <div className="items-row">
         {items.map((item, index) => (
-          <span key={index} className="itemss">{item}</span> 
-          
+          <span key={index} className="itemss">
+            {item}
+          </span>
         ))}
       </div>
-    <div className="step-default">{children}</div>
+      <div className="step-default">{children}</div>
     </>
-   
-  )
+  );
 }
 
 function StepIndicator({
@@ -266,7 +269,6 @@ function StepIndicator({
       animate={status}
       initial={false}
     >
-      
       <motion.div
         variants={{
           inactive: { scale: 1, backgroundColor: "#ffffff", color: "#a3a3a3" },
@@ -276,8 +278,6 @@ function StepIndicator({
         transition={{ duration: 0.3 }}
         className="step-indicator-inner"
       >
-    
-        
         {/* {status === "complete" ? (
           <CheckIcon className="check-icon" />
         ) : status === "active" ? (

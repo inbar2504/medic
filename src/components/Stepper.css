@@ -70,7 +70,7 @@
   justify-content: flex-end;
 }
 
-/* .back-button {
+.back-button {
   transition: all 350ms;
   display: flex;
   align-items: center;
@@ -86,7 +86,7 @@
   font-size: 4vmin;
   position: absolute;
   left: -3vw;
-} */
+}
 
 .back-button:hover {
   color: #52525b;
@@ -98,7 +98,7 @@
     color: #a3a3a3; */
 }
 
-/* .next-button {
+.next-button {
   transition: all 350ms;
   display: flex;
   align-items: center;
@@ -114,8 +114,8 @@
   font-size: 4vmin;
   position: absolute;
   right: 70vw;
-} */
-.back-button, .next-button {
+}
+/* .back-button, .next-button {
   transition: all 350ms;
   display: flex;
   align-items: center;
@@ -129,8 +129,8 @@
   background-color: white;
   border: 0;
   font-size: 4vmin;
-  /* Removed position properties */
-}
+
+} */
 .next-button:hover {
   background-color: #ffffff;
 }
