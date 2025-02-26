@@ -124,7 +124,7 @@ export default function Stepper({
                       display: "flex",
                       justifyContent: "space-between", // Distribute buttons evenly
                       width: "100%", // Ensure it takes the full width
-                      bottom: 0,
+                      // bottom: 0,
                       position: "absolute",
                     }}
                   >
