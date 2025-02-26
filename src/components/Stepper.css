@@ -84,8 +84,8 @@
   background-color: white;
   border: 0;
   font-size: 4vmin;
-  position: absolute;
-  left: -3vw;
+  position: fixed;
+  left: 75vw;
 }
 
 .back-button:hover {
@@ -112,7 +112,7 @@
   background-color: white;
   border: 0;
   font-size: 4vmin;
-  position: absolute;
+  position: fixed;
   right: 70vw;
 }
 /* .back-button, .next-button {
