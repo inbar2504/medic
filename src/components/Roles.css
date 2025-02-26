@@ -15,9 +15,9 @@
 
 .home-button {
   position: fixed;
-  top: 80vh;
+  top: 80%;
   border-radius: 30px;
-  padding: 12px;
+  padding: 4px;
   /* font-family: 'avram' !important; */
   color: #192318;
   background-color: white;
@@ -26,4 +26,6 @@
   font-weight: 500;
   letter-spacing: -0.025em;
   cursor: pointer;
+  height: 5%;
+  left: 1%;
 }

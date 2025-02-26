@@ -37,7 +37,7 @@ function App() {
             <div className="start-page">
               <h1>תו"ל אר"ן</h1>
               <h2 className="txt">
-                !חייל יקר
+                חייל יקר!
                 <br />
                 הלומדה עוסקת בתורת לחימה באירוע רב נפגעים
               </h2>

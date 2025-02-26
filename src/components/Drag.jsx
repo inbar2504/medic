@@ -4,14 +4,22 @@ import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import "./Drag.css";
 
 const sortedItems = [
-  { id: "0", text: "חבירה וניסיון לגבש תמונת מצב" },
+    { id: "0", text: "חבירה וניסיון לגבש תמונת מצב" },
   { id: "1", text: "תדרוך הכוח" },
   { id: "2", text: "הגדרת נקודת ריכוז הפצועים" },
   { id: "3", text: "לחלק לפי גזרות" },
   { id: "4", text: "תדרוך על הגעה לנקודת ריכוז הפצועים" },
   { id: "5", text: 'להעלות דיווח שהגעתם לאר"ן ומתחילים לגבש תמונת מצב' },
+  
 ];
-
+const itemss = [
+    { id: "1", text: "תדרוך הכוח" },
+    { id: "2", text: "הגדרת נקודת ריכוז הפצועים" },
+    { id: "3", text: "לחלק לפי גזרות" },
+    { id: "4", text: "תדרוך על הגעה לנקודת ריכוז הפצועים" },
+    { id: "5", text: 'להעלות דיווח שהגעתם לאר"ן ומתחילים לגבש תמונת מצב' },
+    { id: "0", text: "חבירה וניסיון לגבש תמונת מצב" },
+  ];
 function compareArrays(arr1, arr2) {
   if (arr1.length !== arr2.length) return false;
 
@@ -21,8 +29,10 @@ function compareArrays(arr1, arr2) {
 }
 
 const Drag = () => {
-  const [items, setItems] = useState(sortedItems);
-  const [isItemsSorted, setIsItemsSorted] = useState(true);
+  const [items, setItems] = useState(itemss);
+  const [isItemsSorted, setIsItemsSorted] = useState();
+  const [isChecked, setIsChecked] = useState();
+  
   const onDragEnd = (result) => {
     if (!result.destination) return;
 
@@ -33,6 +43,7 @@ const Drag = () => {
   };
 
   const checkOrder = () => {
+    setIsChecked(true);
     if (compareArrays(items, sortedItems)) {
       setIsItemsSorted(true);
     } else {
@@ -80,8 +91,39 @@ const Drag = () => {
           )}
         </Droppable>
       </DragDropContext>
-      <button onClick={checkOrder}>בדיקה</button>
-      {isItemsSorted && "hilo <3 ily tulipe"}
+
+      <button onClick={checkOrder} className="check">בדיקה</button>
+      <br />
+      {(isItemsSorted && isChecked) ? 
+      <div className="answers">
+        <button className="close-button" onClick={ () => setIsChecked(false)}>X</button>
+        תשובה נכונה!
+        </div>
+    //   "תשובה נכונה!"
+      : 
+      <></>}
+       {(!isItemsSorted && isChecked) ? 
+        <div className="answers">
+        <button className="close-button" onClick={ () => setIsChecked(false)}>X</button>
+        תשובה שגויה!
+       <br />
+        הסדר הנכון הינו:
+        <br />
+   1. חבירה וניסיון לגבש תמונת מצב
+   <br />
+   2. תדרוך הכוח
+   <br />
+  3. הגדרת נקודת ריכוז הפצועים
+  <br />
+4. לחלק לפי גזרות
+<br />
+5. תדרוך על הגעה לנקודת ריכוז הפצועים
+<br />
+6. להעלות דיווח שהגעתם לאר"ן ומתחילים לגבש תמונת מצב
+        </div>
+    //    "תשובה שגויה!"
+       :
+        <></>}
     </div>
   );
 };

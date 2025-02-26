@@ -32,7 +32,22 @@ body {
   text-align: center;
   justify-content: flex-start;
 }
-
+.download-button {
+  position: absolute;
+  margin: 3px;
+  border-radius: 30px;
+  padding: 12px;
+  font-family: 'avram' !important;
+  color: #192318;
+  background-color: white;
+  border: 0;
+  font-size: 4vmin;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  cursor: pointer;
+  top: 74%;
+  height: 5%;
+}
 
 .carousel-prev.block, .carousel-next.block {
   opacity: 0 !important;

@@ -47,7 +47,10 @@ body {
   border-bottom: 3px solid #ffffff;
 }
 .piska {
-  padding: 5%;
+  /* padding: 5%; */
+  padding-left: 6%;
+  padding-right: 6%;
+  font-size: 6vmin;
 }
 .text {
   position: relative;
