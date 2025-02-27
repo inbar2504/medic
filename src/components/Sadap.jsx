@@ -42,19 +42,20 @@ function Sadap(props) {
   const items = [];
   const [showImg1, setShowImg1] = useState(false);
   const [showImg2, setShowImg2] = useState(true);
-  const [opacityNum1, setOpacity1] = useState("#192318");
+  
+  const [opacityNum1, setOpacity1] = useState("#ffffff");
   const [opacityNum2, setOpacity2] = useState("#808080");
   const [showStart, setShowStart] = useState(true);
   // let opacityNum1="#192318";
   // let opacityNum2="#808080";
   const setImg = (numImg) => {
     if (numImg === 2) {
-      setOpacity1("#192318");
+      setOpacity1("#ffffff");
       setOpacity2("#808080");
       setShowImg2(true);
       setShowImg1(false);
     } else if (numImg === 1) {
-      setOpacity2("#192318");
+      setOpacity2("#ffffff");
       setOpacity1("#808080");
       setShowImg1(true);
       setShowImg2(false);

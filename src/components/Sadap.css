@@ -3,9 +3,9 @@
   height: 8vh;
   border-radius: 30px;
   border: 0px;
-  background-color: #192318;
-  color: white;
-  display: flex;
+  background-color: white;
+  color:#192318;
+  /* color: #192318; */
   justify-content: center;
   align-content: center;
   flex-direction: row;
@@ -87,13 +87,14 @@
     z-index: 50;
 }
 #con-btn {
-    border-radius: 20px;
+    border-radius: 35px;
     font-size: 5vmin;
     border: #ffffff00;
     padding: 5px;
     position: relative;
     top: 85vh;
     color: black;
+    padding: 15px;
 }
 #strt-img {
     width: 50%;

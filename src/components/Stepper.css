@@ -161,6 +161,7 @@
   align-content: stretch;
   align-items: flex-start;
   width: 13vw;
+  margin-left: -2vw;
 }
 
 .active-dot {
@@ -204,4 +205,5 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
 }
